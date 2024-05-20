@@ -47,4 +47,11 @@ Get a list of runes with pagination and search capabilities.
 #### Example Request
 
 ```bash
-curl -X POST "http://localhost:5000/runes?page=1&limit=10&search=test" -H "x-api-key: YOUR_API_KEY"
+curl -X POST "http://localhost:5000/runes" \
+    -H "Content-Type: application/json" \
+    -H "x-api-key: YOUR_API_KEY" \
+    -d '{
+        "page": 1,
+        "limit": 10,
+        "search": "SCAM"
+    }'
