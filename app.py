@@ -42,26 +42,8 @@ cors = CORS(app, origins=['https://mint-iz3y.onrender.com/en/mint-runes', 'https
 
 URL = "https://testnet-backend-ivoa.onrender.com"
 
-# connect('test_database', host='mongodb+srv://aryanksharma1729:runes%401729@atlascluster.aewcgmd.mongodb.net')
-
-
-
 uri = os.getenv("MONGO_URI")
 db = os.getenv("DB")
-# app.config["MONGO_URI"] = "mongodb+srv://aryanksharma1729:runes%401729@atlascluster.aewcgmd.mongodb.net/test_database"
-# # client = MongoClient('mongodb+srv://aryanksharma1729:runes%401729@atlascluster.aewcgmd.mongodb.net/test_database', )
-# Set up the MongoDB connection URI with SSL and the CA certificate file
-# cafile = certifi.where()
-# mongo_uri = f"mongodb+srv://aryanksharma1729:runes%401729@atlascluster.aewcgmd.mongodb.net/test_database?ssl=true&tlsCAFile={cafile}"
-
-
-# Set the MONGO_URI configuration for Flask-PyMongo
-# app.config["MONGO_URI"] = mongo_uri
-
-# Initialize PyMongo with the Flask app
-# pymongo = PyMongo(app)
-
-# Define a dictionary to store API keys and their associated users or clients
 
 # Define a dictionary to store API keys and their associated users or clients
 api_keys = {
